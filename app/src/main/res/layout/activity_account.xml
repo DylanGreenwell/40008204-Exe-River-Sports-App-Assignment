@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".AccountActivity">
+
+    <TextView
+        android:id="@+id/AccountTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account Settings"
+        android:textSize="20dp"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginTop="50dp"/>
+<!--title of page-->
+    <TextView
+        android:id="@+id/accountDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Here, you can choose some settings regarding your account."
+        android:layout_marginTop="50dp"
+        android:textSize="18dp"
+        android:layout_below="@+id/AccountTitle"/>
+
+    <Button
+        android:id="@+id/btnChangePass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/accountDescription"/>
+<!--change password button-->
+    <Button
+        android:id="@+id/btnDeleteAcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Account"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/btnChangePass"/>
+<!--delete account button-->
+    <Button
+        android:id="@+id/btnToHome2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Home Page"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/btnDeleteAcc"/>
+<!--to home page button-->
+</RelativeLayout>

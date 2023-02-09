@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".AboutUsActivity">
+<!--the code above is about the layout of the page - padding is distance from edges-->
+    <TextView
+        android:id="@+id/aboutUsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textSize="20dp"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginTop="50dp"/>
+<!--above is the code for the page title - this is re used across every page-->
+
+    <TextView
+        android:id="@+id/aboutUs1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We are Exe River Sports - A Devon Sports Centre which cares for our community."
+        android:layout_marginTop="30dp"
+        android:textSize="18dp"
+        android:layout_below="@+id/aboutUsTitle"/>
+<!--text box with description-->
+    <TextView
+        android:id="@+id/aboutUs2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="At our centre, we offer people an area to work out, play sports and socialise with each other in a safe environment with state-of-the-art technology!"
+        android:layout_marginTop="30dp"
+        android:textSize="18dp"
+        android:layout_below="@+id/aboutUs1"/>
+
+    <ImageView
+        android:id="@+id/aboutUsImage"
+        android:layout_width="wrap_content"
+        android:layout_height="345dp"
+        android:layout_below="@+id/aboutUs2"
+        app:srcCompat="@drawable/treadmills" />
+<!--image on the page - link to image - https://www.istockphoto.com/photo/happy-athletic-people-jogging-on-treadmills-in-a-health-club-gm1089939832-292395645 -->
+    <Button
+        android:id="@+id/btnToHome1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Home Page"
+        android:textSize="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/aboutUsImage"/>
+<!--button code for taking user back to home page-->
+</RelativeLayout>

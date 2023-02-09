@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".TicketsActivity">
+
+    <TextView
+        android:id="@+id/ticketsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tickets Page"
+        android:textSize="20dp"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginTop="50dp"/>
+<!--page title-->
+    <TextView
+        android:id="@+id/ticketsWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="On this page, you can purchase a range of tickets and addons for those tickets."
+        android:layout_marginTop="50dp"
+        android:textSize="18dp"
+        android:layout_below="@+id/ticketsTitle"/>
+<!--page description-->
+    <TextView
+        android:id="@+id/adultText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Adult"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18dp"
+        android:layout_below="@+id/ticketsWelcome"/>
+<!--adult ticket description-->
+    <TextView
+        android:id="@+id/memberText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Member"
+        android:layout_marginTop="15dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/numberAdult"
+        android:layout_below="@+id/ticketsWelcome"/>
+<!--member ticket description-->
+    <TextView
+        android:id="@+id/childText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Child"
+        android:layout_marginTop="15dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/numberMember"
+        android:layout_below="@+id/ticketsWelcome"/>
+<!--child ticket description-->
+    <Spinner
+        android:id="@+id/numberAdult"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/adultText"/>
+<!--adult ticket drop down box-->
+    <Spinner
+        android:id="@+id/numberMember"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/memberText"
+        android:layout_toRightOf="@id/numberAdult"/>
+    <!--member ticket drop down box-->
+    <Spinner
+        android:id="@+id/numberChild"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/childText"
+        android:layout_toRightOf="@id/numberMember"/>
+    <!--child ticket drop down box-->
+    <TextView
+        android:id="@+id/adultPieText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Pie"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18dp"
+        android:layout_below="@+id/numberAdult"/>
+
+
+    <!--everything below follows a similar structure to whats above-->
+    <!--for example, the next 6 are-->
+    <!--adult pie text-->
+    <!--member pie text-->
+    <!--child pie text-->
+    <!--adult pie dropdown box-->
+    <!--member pie dropdown box-->
+    <!--child pie dropdown box-->
+    <!--it always goes "text" then "dropdown"-->
+    <!--the only anomaly is the pint section where-->
+    <!--it only has options for adults and members-->
+    <!--as children cannot have pints-->
+
+
+
+    <TextView
+        android:id="@+id/memberPieText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Pie"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/adultPieText"
+        android:textSize="18dp"
+        android:layout_below="@+id/numberMember"/>
+
+    <TextView
+        android:id="@+id/childPieText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Pie"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/memberPieText"
+        android:textSize="18dp"
+        android:layout_below="@+id/numberChild"/>
+
+    <Spinner
+        android:id="@+id/numberPieAdult"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/adultPieText"/>
+
+    <Spinner
+        android:id="@+id/numberPieMember"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/memberPieText"
+        android:layout_toRightOf="@id/numberPieAdult"/>
+
+    <Spinner
+        android:id="@+id/numberPieChild"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/childPieText"
+        android:layout_toRightOf="@id/numberPieMember"/>
+
+    <TextView
+        android:id="@+id/adultPintText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Pint"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18dp"
+        android:layout_below="@+id/numberPieAdult"/>
+
+    <TextView
+        android:id="@+id/memberPintText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Pint"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/adultPintText"
+        android:textSize="18dp"
+        android:layout_below="@+id/numberPieMember"/>
+
+    <Spinner
+        android:id="@+id/numberPintAdult"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/adultPintText"/>
+
+    <Spinner
+        android:id="@+id/numberPintMember"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/memberPintText"
+        android:layout_toRightOf="@id/numberPintAdult"/>
+
+    <TextView
+        android:id="@+id/adultTourText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Tour"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18dp"
+        android:layout_below="@+id/numberPintAdult"/>
+
+    <TextView
+        android:id="@+id/memberTourText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Tour"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/adultTourText"
+        android:textSize="18dp"
+        android:layout_below="@+id/numberPintMember"/>
+
+    <TextView
+        android:id="@+id/childTourText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Tour"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/memberTourText"
+        android:textSize="18dp"
+        android:layout_below="@+id/numberPintMember"/>
+
+    <Spinner
+        android:id="@+id/numberTourAdult"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/adultTourText"/>
+
+    <Spinner
+        android:id="@+id/numberTourMember"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/memberTourText"
+        android:layout_toRightOf="@id/numberTourAdult"/>
+
+    <Spinner
+        android:id="@+id/numberTourChild"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/childTourText"
+        android:layout_toRightOf="@id/numberTourMember"/>
+
+    <TextView
+        android:id="@+id/adultFrontText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Tour"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18dp"
+        android:layout_below="@+id/numberTourAdult"/>
+
+    <TextView
+        android:id="@+id/memberFrontText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Tour"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/adultTourText"
+        android:textSize="18dp"
+        android:layout_below="@+id/numberTourMember"/>
+
+    <TextView
+        android:id="@+id/childFrontText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Tour"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/memberTourText"
+        android:textSize="18dp"
+        android:layout_below="@+id/numberTourMember"/>
+
+    <Spinner
+        android:id="@+id/numberFrontAdult"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/adultFrontText"/>
+
+    <Spinner
+        android:id="@+id/numberFrontMember"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/memberFrontText"
+        android:layout_toRightOf="@id/numberFrontAdult"/>
+
+    <Spinner
+        android:id="@+id/numberFrontChild"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/childFrontText"
+        android:layout_toRightOf="@id/numberFrontMember"/>
+
+    <Button
+        android:id="@+id/btnPrint"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Print Receipt"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/numberFrontAdult"/>
+
+    <Button
+        android:id="@+id/btnToHome3"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Back to Home Page"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/numberFrontAdult"
+        android:layout_toRightOf="@+id/btnPrint"/>
+<!--button to go to home page-->
+</RelativeLayout>

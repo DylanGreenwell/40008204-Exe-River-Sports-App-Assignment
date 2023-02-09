@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".DeleteAccountActivity">
+
+    <TextView
+        android:id="@+id/deleteAccTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Account"
+        android:textSize="20dp"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/username3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/deleteAccTitle"/>
+<!--username input box-->
+
+    <EditText
+        android:id="@+id/password3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/username3"/>
+<!--password input box-->
+    <EditText
+        android:id="@+id/repassword3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Retype Password"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/password3"/>
+<!--retype password input box-->
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Account"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/repassword3"/>
+<!--delete account button-->
+    <Button
+        android:id="@+id/btnToAccount2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Account Page"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/btnDelete"/>
+<!--return to account page button-->
+</RelativeLayout>

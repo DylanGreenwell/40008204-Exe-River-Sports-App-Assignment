@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".TicketReceiptActivity">
+
+    <TextView
+        android:id="@+id/receiptTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ticket Receipt Page"
+        android:textSize="20dp"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/receiptWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Below is the receipt with details on your ticket purchase:"
+        android:layout_marginTop="50dp"
+        android:textSize="18dp"
+        android:layout_below="@+id/receiptTitle"/>
+<!--receipt page description-->
+    <Button
+        android:id="@+id/btnToHome4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Home Page"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/receiptWelcome"/>
+<!--button to home page-->
+</RelativeLayout>

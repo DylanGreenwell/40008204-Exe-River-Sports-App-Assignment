@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/homeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home Page"
+        android:textSize="20dp"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/homeWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Exe River Sports App! Please take a look around!"
+        android:layout_marginTop="50dp"
+        android:textSize="18dp"
+        android:layout_below="@+id/homeTitle"/>
+<!--page description-->
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/homeWelcome"/>
+<!--about us button-->
+    <Button
+        android:id="@+id/btnTickets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Browse Tickets"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/btnAbout"/>
+<!--browse tickets button-->
+    <Button
+        android:id="@+id/btnAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account Processes"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/btnTickets"/>
+<!--account processes button-->
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/btnAccount"/>
+<!--log out button-->
+</RelativeLayout>
